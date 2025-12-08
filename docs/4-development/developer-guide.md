@@ -45,6 +45,43 @@ npx playwright test
 # Results appear in dashboard
 ```
 
+### Local Development (npm link)
+
+For developing or testing packages locally before npm publish:
+
+```bash
+# 1. Clone and build packages
+git clone https://github.com/adentic/ux.qa.git
+cd ux.qa
+bun install
+
+# 2. Build packages
+cd packages/reporter && bun run build
+cd ../scanner && bun run build
+
+# 3. Link packages globally
+cd packages/reporter && npm link
+cd ../scanner && npm link
+
+# 4. In your Playwright project, link the packages
+cd /path/to/your/project
+npm link @ux.qa/reporter
+npm link @ux.qa/scanner
+```
+
+Now changes to the source packages are immediately available without reinstalling.
+
+**Alternative: File path dependency**
+
+In your project's `package.json`:
+```json
+{
+  "dependencies": {
+    "@ux.qa/reporter": "file:/path/to/ux.qa/packages/reporter"
+  }
+}
+```
+
 ## Dashboard Setup
 
 ### Local Development
