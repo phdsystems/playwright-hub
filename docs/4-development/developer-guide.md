@@ -29,7 +29,7 @@
 ```bash
 # 1. Start Dashboard
 git clone https://github.com/phdsystems/ux-qa.git
-cd ux.qa
+cd ux-qa
 bun install
 bun run dev
 # Dashboard available at http://localhost:3200
@@ -77,7 +77,7 @@ In your project's `package.json`:
 ```json
 {
   "dependencies": {
-    "@ux.qa/reporter": "file:/path/to/ux.qa/packages/reporter"
+    "@ux.qa/reporter": "file:/path/to/ux-qa/packages/reporter"
   }
 }
 ```

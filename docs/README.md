@@ -7,7 +7,7 @@ Test automation dashboard ecosystem for Playwright and E2E testing frameworks.
 ```bash
 # Dashboard
 git clone https://github.com/phdsystems/ux-qa.git
-cd ux.qa && bun install && bun run dev
+cd ux-qa && bun install && bun run dev
 
 # Reporter (in your Playwright project)
 npm install @ux.qa/reporter
