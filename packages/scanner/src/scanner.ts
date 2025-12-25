@@ -166,3 +166,18 @@ export class Scanner {
 export function createScanner(config?: Partial<ScannerConfig>): Scanner {
   return new Scanner(config);
 }
+
+/**
+ * Convenience function to scan a directory
+ *
+ * @param rootDir Directory to scan
+ * @param config Scanner configuration
+ * @returns Scan results
+ */
+export async function scanDirectory(
+  rootDir: string,
+  config?: Partial<Omit<ScannerConfig, 'rootDir'>>
+): Promise<ScanResult> {
+  const scanner = new Scanner({ ...config, rootDir });
+  return scanner.scan();
+}

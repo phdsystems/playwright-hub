@@ -1,0 +1,65 @@
+{
+  "name": "@ux.qa/frontmock",
+  "version": "0.1.0",
+  "description": "FrontMock - Modern frontend testing framework with reusable test components",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./providers/*": {
+      "import": "./dist/providers/*.js",
+      "types": "./dist/providers/*.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "bun test",
+    "prepublishOnly": "bun run build"
+  },
+  "keywords": [
+    "frontmock",
+    "testing",
+    "mocking",
+    "frontend",
+    "react",
+    "test-components",
+    "vitest",
+    "jest"
+  ],
+  "author": "Adentic",
+  "license": "MIT",
+  "peerDependencies": {
+    "@testing-library/jest-dom": ">=6.0.0",
+    "@testing-library/react": ">=16.0.0",
+    "@testing-library/user-event": ">=14.0.0",
+    "react": ">=18.0.0",
+    "vitest": ">=4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "vitest": {
+      "optional": true
+    },
+    "@testing-library/react": {
+      "optional": true
+    },
+    "@testing-library/user-event": {
+      "optional": true
+    },
+    "@testing-library/jest-dom": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.7",
+    "typescript": "^5.9.3"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ]
+}

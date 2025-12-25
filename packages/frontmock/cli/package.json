@@ -1,0 +1,42 @@
+{
+  "name": "@ux.qa/frontmock-cli",
+  "version": "0.1.0",
+  "description": "CLI for FrontMock - Frontend testing framework",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "uxqa": "dist/cli.js",
+    "uxqa-test": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod +x dist/cli.js",
+    "dev": "tsc --watch",
+    "test": "bun test"
+  },
+  "keywords": [
+    "testing",
+    "cli",
+    "playwright",
+    "vitest",
+    "scanner"
+  ],
+  "author": "Adentic",
+  "license": "MIT",
+  "dependencies": {
+    "@ux.qa/scanner": "workspace:*",
+    "@ux.qa/reporter": "workspace:*",
+    "@ux.qa/frontmock": "workspace:*",
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "ora": "^8.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.9.3"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ]
+}

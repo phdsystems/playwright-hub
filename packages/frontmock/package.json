@@ -1,0 +1,36 @@
+{
+  "name": "@ux.qa/frontmock-workspace",
+  "version": "0.1.0",
+  "description": "FrontMock - Modern frontend testing framework with 20+ reusable test components",
+  "private": true,
+  "workspaces": [
+    "core",
+    "cli",
+    "config"
+  ],
+  "scripts": {
+    "build": "bun run build:core && bun run build:cli",
+    "build:core": "cd core && bun run build",
+    "build:cli": "cd cli && bun run build",
+    "test": "bun test",
+    "dev": "bun run build --watch"
+  },
+  "keywords": [
+    "frontmock",
+    "testing",
+    "mocking",
+    "frontend",
+    "react",
+    "typescript",
+    "vitest",
+    "jest",
+    "test-components"
+  ],
+  "author": "Adentic",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phdsystems/ux-qa.git",
+    "directory": "packages/frontmock"
+  }
+}
