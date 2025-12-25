@@ -1,9 +1,9 @@
 // Main entry point for @ux.qa/scanner
 
 export { Scanner, createScanner } from './scanner';
-export { analyzeReactFile } from './analyzers/react';
-export { generateTestFile } from './generators/test-template';
-export { calculateCoverage, printCoverageReport, generateJsonReport } from './reporters/coverage';
+export { analyzeReactFile } from './analyzer/react';
+export { generateTestFile } from './generator/test-template';
+export { calculateCoverage, printCoverageReport, generateJsonReport } from './reporter/coverage';
 
 export type {
   ScannerConfig,

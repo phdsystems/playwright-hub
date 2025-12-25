@@ -1,0 +1,13 @@
+# Bun Configuration
+# https://bun.sh/docs/runtime/bunfig
+
+[test]
+# Preload DOM setup for component testing
+preload = ["./bun.setup.ts"]
+
+# Test file patterns
+root = "."
+
+# Coverage settings
+coverage = false
+coverageDir = "coverage"

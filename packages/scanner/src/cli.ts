@@ -3,8 +3,8 @@ import { existsSync, mkdirSync, writeFileSync, readFileSync } from 'fs';
 import { join, dirname } from 'path';
 import chalk from 'chalk';
 import { createScanner } from './scanner';
-import { printCoverageReport, generateJsonReport } from './reporters/coverage';
-import { generateTestFile } from './generators/test-template';
+import { printCoverageReport, generateJsonReport } from './reporter/coverage';
+import { generateTestFile } from './generator/test-template';
 import type { ScannerConfig, TestGeneratorOptions } from './types';
 
 const VERSION = '0.1.0';

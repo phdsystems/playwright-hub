@@ -8,8 +8,8 @@ import type {
   CoverageStats,
   RouteInfo,
 } from './types';
-import { analyzeReactFile } from './analyzers/react';
-import { calculateCoverage } from './reporters/coverage';
+import { analyzeReactFile } from './analyzer/react';
+import { calculateCoverage } from './reporter/coverage';
 
 const DEFAULT_CONFIG: ScannerConfig = {
   rootDir: '.',
