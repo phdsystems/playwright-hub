@@ -1,7 +1,8 @@
 /**
- * renderWithProviders - Helper to render with common providers
+ * renderWithProviders - Wrapper factory for rendering with context providers
  *
- * Simplifies rendering components with providers in tests
+ * Creates render functions that automatically wrap components with
+ * theme, router, and custom context providers.
  */
 
 import React from 'react'

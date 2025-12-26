@@ -2,7 +2,7 @@
  * L3 Core - Implementation Layer
  *
  * Contains all implementations:
- * - Test components (mocks, helpers, providers)
+ * - Test components (mocks, wrappers, providers)
  * - Framework adapters (Vitest, Jest, Bun)
  * - Utilities (assertions, fixtures, mocks, wait)
  */

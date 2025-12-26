@@ -1,7 +1,8 @@
 /**
- * TestHarness - Comprehensive test wrapper with all common setup
+ * TestHarness - Complete test wrapper combining error boundary and suspense
  *
- * Combines all test providers and utilities into one component
+ * Wraps components with error handling and async loading support.
+ * Use this as the standard wrapper for testing React components.
  */
 
 import React, { Suspense } from 'react'

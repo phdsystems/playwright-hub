@@ -10,5 +10,5 @@ export * from './providers'
 // Mocks
 export * from './mocks'
 
-// Helpers
-export * from './helpers'
+// Wrappers
+export * from './wrappers'

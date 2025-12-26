@@ -29,6 +29,11 @@ export const examples = {
     'fixtures': 'utilities/fixtures.example.ts',
     'mocks': 'utilities/mocks.example.ts',
   },
+  wrappers: {
+    'test-boundary': 'wrappers/test-boundary.example.tsx',
+    'test-harness': 'wrappers/test-harness.example.tsx',
+    'render-with-providers': 'wrappers/render-with-providers.example.tsx',
+  },
 }
 
 export default examples

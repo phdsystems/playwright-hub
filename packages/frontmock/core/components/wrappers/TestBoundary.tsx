@@ -1,7 +1,8 @@
 /**
- * TestBoundary - Error boundary for testing
+ * TestBoundary - Error boundary wrapper for testing
  *
- * Catches errors in component tests
+ * Wraps components to catch and handle errors during test rendering.
+ * Prevents test crashes and allows error assertions.
  */
 
 import React from 'react'
